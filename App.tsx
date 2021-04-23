@@ -7,20 +7,18 @@ import {
   Jost_600SemiBold,
 } from '@expo-google-fonts/jost'
 
-import { Welcome } from './src/views/Welcome'
+import  Routes  from './src/routes'
 
 export default function App() {
-
   let [fontsLoaded] = useFonts({
     Jost_400Regular,
     Jost_600SemiBold,
   });
 
-  if (!fontsLoaded) {
-    return <AppLoading />;
-  }
+  if (!fontsLoaded) 
+    return <AppLoading />
 
   return (
-    <Welcome/>
-  );
+    <Routes/>
+  )
 }
