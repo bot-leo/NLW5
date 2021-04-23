@@ -18,7 +18,6 @@ import { Button } from '../components/Button'
 import colors from '../styles/colors'
 import fonts from '../styles/fonts'
 
-
 export function UserIdentification(){
   // Hooks de Navegação
   const navigation = useNavigation()
