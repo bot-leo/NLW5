@@ -6,18 +6,18 @@ import {RectButton, RectButtonProps} from 'react-native-gesture-handler'
 import colors from '../styles/colors'
 import fonts from '../styles/fonts'
 
-interface EnviromentButton extends RectButtonProps{
+interface EnvironmentButton extends RectButtonProps{
   title: string
   // o ? antes dos dois pontos significa que a props nao é obrigatoria
   active?: Boolean
 }
 
-export function EnviromentButton({
+export function EnvironmentButton({
     title,
     active = false,
     ...rest
 
-} : EnviromentButton){
+} : EnvironmentButton){
     return(
       <RectButton style={[styles.container,
                             active && styles.containerActive
